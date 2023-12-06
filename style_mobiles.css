@@ -1,34 +1,51 @@
 @media only screen and (max-width: 900px) {
 
 
-  img.Banner {
+  .Banner img.Banner {
     background: url(Imatges/Banner_mobile.jpeg);
-    width: 400px;
+    width: 600px;
     height: 400px;
   }
 
+  .nav li {
+    display: inline;
+    background: linear-gradient(#000000, #776464);
+    font-size: 18px;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
 
-
+  .nav {
+    margin-right: 100px;
+  }
 
   .logo {
-    margin-left: 60px;
+    margin-left: 20px;
   }
 
   .div2 {
     display: block;
-    margin-left: 12%;
+    margin-left: 30px;
+  }
+
+  .div3 {
+    display:block;
+    margin-left: 25%;
   }
 
   .div3 img {
 
-    margin-left: 40px;
+margin-left: 40px;
 
   }
 
-  .div4 {
+  .div4{
 
-    display: block;
-    margin-left: -50px
+  display:block;
+  margin-left: -50px
+    
   }
 
   .div5 .nav {
