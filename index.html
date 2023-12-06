@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<!--Metadades-->
+
+<head>
+  <!--METADADA: codificació de caràcters-->
+  <!--JUST: Evita que no es mostrin caràcters com la "ñ" o caràcters amb accents-->
+  <meta charset="utf-8">
+
+  <!--METADADA: name i descripció de la web-->
+  <!--JUST: Breu descripció de la pàgina per facilitar la recerca a l'usuari i al buscador-->
+  <meta name="viewport"
+    content="Pàgina d'inici de Champ's PC amb els apartats més considerables de la tenda de components informàtics">
+
+  <!--METADADA: "Keyword" per facilitar al buscador la recerca de la web-->
+  <!--JUST: Depenent de les paraules clau que coincideixen amb la recerca, es mostra més amunt o mes avall al pàgina web-->
+  <meta name="keywords" content="Champs, PC, Processadors, Memòria RAM">
+
+  <!--METADADA: Autors de la web-->
+  <!--JUST: Fer referència als autors de la web i definir-ne els drets de propietat-->
+  <meta name="author" content="Nacho de Inza, Pol Buqueras">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="Imatges/Favicon2.jpg" type="image/x-icon">
+
+  <!--Fonts de text importades de google fonts-->
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Oswald:wght@500&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+
+  <!--METADADA: title-->
+  <!--JUST: El navegador llegeix el títol i si coincideix amb la recerca, mostra la pàgina web a l'usuari-->
+  <title>Champ's PC</title>
+
+  <!--Implementació títol i enllaç amb document CSS-->
+
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width:500px) and (max-width: 900px)"
+    href="style_mobiles.css">
+
+  <!--Semantica-->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ComputerStore",
+        "name": "Champ's PC",
+        "image": "",
+        "@id": "",
+        "url": "https://champs-pc.polbuqueras.repl.co/",
+        "telephone": "667647384",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C/ Gral Marina",
+          "addressLocality": "Melilla",
+          "postalCode": "52001",
+          "addressCountry": "ES"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "21:00"
+        } 
+      }
+    </script>
+
+</head>
+
+<body>
+
+  <!--Logo de la web & Llista de selecció de la zona superior-->
+  <!--SEMANTICA: Div, estructurar la informació en blocs divisors per organitzar la web en zones-->
+  <div class="div1">
+
+    <!--SEMANTICA: Nav, estructura un enllaç per cada apartat de la pàgina que enllaça amb altres pàgines-->
+    <nav class="nav">
+      
+      <ul class="llista">
+        <img class="logo" alt="Logo" src="Imatges/Logo.png">
+        <li>
+          <a href="Cont.html">Contacte </a>
+        </li>
+        <li>
+          <a href="Proc.html">Procesadors</a>
+        </li>
+        <li>
+          <a href="Memo.html">Memoria RAM</a>
+        </li>
+        <li>
+          <a href="index.html">Inici</a>
+        </li>
+      </ul>
+
+    </nav>
+
+  </div>
+
+  <div class="Banner">
+
+    <!--Imatge base de la web-->
+    <img alt="Banner" src="Imatges/Banner.jpeg" class="Banner">
+
+  </div>
+
+  <!--SEMÀNTICA: "Header: Introdueix l'element representant del contingut que segueix-->
+  <header>
+
+    <h1 class="inicih1"> Pàgina d'Inici</h1>
+
+  </header>
+
+  <!--Primer div pàgina inici-->
+  <div class="div2">
+    <h3 class="inicih3"> La millor tenda online del planeta</h3>
+
+    <img class="img_inici" alt="img1" src="Imatges/trofeo.gif">
+
+    <p class="paraf">Som la tenda preferida pels <br>
+      clients des de fa més de 5 anys. <br>
+      Guanyadors de 7 premios NAFTA <br>
+      de diferents països
+    </p>
+
+  </div>
+
+  <!--Segon div pàgina inici-->
+  <div class="div3">
+
+    <h3> Gran varietat de components</h3>
+
+    <img class="img_inici" alt="img2" src="Imatges/Comp.jpg">
+
+    <p class="paraf">Disposem dels components més actuals <br>
+      del mercat. Comptem amb memòries RAM recent sortides <br>
+      del mercat i processadors que faran volar el teu PC.
+    </p>
+
+  </div>
+
+  <!--Tercer div pàgina inici-->
+  <div class="div4">
+
+    <h3> Personal i atenció al client qualificada</h3>
+
+    <img class="img_inici" alt="img3" src="Imatges/Personal.png">
+
+    <p class="paraf">Una de les nostres principals qualitats, es posar a disposició <br>
+      del client els millors serveis possibles per a cada situació. <br>
+      És per això que disposem d'un contacte via <br>
+      formulari amb atenció al client.
+    </p>
+  </div>
+  <!--LLista de selecció de la zona inferior-->
+  <!-- SEMÀNTICA: "Footer": Peu de pàgina -->
+  <footer class="div9">
+    <nav class="nav">
+
+      <ul class="llista">
+        <li>
+          <a href="Cont.html">Contacte </a>
+        </li>
+        <li>
+          <a href="Proc.html">Procesadors</a>
+        </li>
+        <li>
+          <a href="Memo.html">Memoria RAM</a>
+        </li>
+        <li>
+          <a href="index.html">Inici</a>
+        </li>
+      </ul>
+
+    </nav>
+  </footer>
+
+</body>
+
+</html>

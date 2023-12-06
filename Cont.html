@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<!--Metadades-->
+
+<head>
+  <!--METADADA: codificació de caràcters-->
+  <!--JUST: Evita que no es mostrin caràcters com la "ñ" o caràcters amb accents-->
+  <meta charset="utf-8">
+  
+  <!--METADADA: name i descripció de la web-->
+  <!--JUST: Breu descripció de la pàgina per facilitar la recerca a l'usuari i al buscador-->
+  <meta name="viewport"
+    content="Formulari de contacte amb les dades necessaries per identificar la demanda i l'assumpte principal">
+  
+  <!--METADADA: "Keyword" per facilitar al buscador la recerca de la web-->
+  <!--JUST: Depenent de les paraules clau que coincideixen amb la recerca, es mostra més amunt o mes avall al pàgina web-->
+  <meta name="keywords" content="Champs, PC, Contacte, Suport, Assistència">
+
+  <!--METADADA: Autors de la web-->
+  <!--JUST: Fer referència als autors de la web i definir-ne els drets de propietat-->
+  <meta name="author" content="Nacho de Inza, Pol Buqueras">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="Imatges/Favicon2.jpg" type="image/x-icon">
+
+  <!--Fonts de text importades de google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Oswald:wght@500&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+  
+  <!--METADADA: title-->
+  <!--JUST: El navegador llegeix el títol i si coincideix amb la recerca, mostra la pàgina web a l'usuari-->
+  <title>Champ's PC</title>
+
+  <!--Imlementació títol i enllaç amb document CSS-->
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+  <!--Semantica-->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ComputerStore",
+      "name": "Champ's PC",
+      "image": "",
+      "@id": "",
+      "url": "https://champs-pc.polbuqueras.repl.co/",
+      "telephone": "667647384",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C/ Gral Marina",
+        "addressLocality": "Melilla",
+        "postalCode": "52001",
+        "addressCountry": "ES"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "21:00"
+      } 
+    }
+    </script>
+
+</head>
+
+<body>
+
+  <!--Logo de la web & Llista de selecció de la zona superior-->
+  <div class="div1">
+
+    <nav class="nav">
+
+      <ul class="llista">
+        <img class="logo" alt="Logo" src="Imatges/Logo.png">
+        <li>
+          <a href="Cont.html">Contacte </a>
+        </li>
+        <li>
+          <a href="Proc.html">Procesadors</a>
+        </li>
+        <li>
+          <a href="Memo.html">Memoria RAM</a>
+        </li>
+        <li>
+          <a href="index.html">Inici</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <!--SEMÀNTICA: "Header: Introdueix l'element representant del contingut que segueix-->
+  <header>
+
+    <h1 class="inicih1"> Formulari de contacte</h1>
+
+  </header>
+
+  <!--Formulari de contacte-->
+    <p class="centrar" class="mapa"> ⬇️ Aquí ens pots trobar! ⬇️ </p>
+  
+  <center><iframe clas="centrar" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13027.167673117961!2d-2.9548262257168956!3d35.28629942892506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd77058d93ac5ced%3A0x40463fd8ca1c650!2sMelilla!5e0!3m2!1sca!2ses!4v1700552498669!5m2!1sca!2ses" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+  
+    <p class ="centrar" class="mapa"> ⬇️ Aquí ens pots contactar! ⬇️ </p>
+
+  <!--Utilitzem center ni que estigui obsolet, per evitar classificar cada element en una classe-->
+  <center>
+    <div class="contact_form">
+      <div class="formulario">
+        <h3 class="h3form" class="centrar">Escriu-nos i ens posarem en contacte el més aviat possible</h3>
+
+
+        <form action="submeter-formulario.php" method="post">
+
+
+          <p class="form">
+            <label for="nombre" class="colocar_nombre">Nom
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+              placeholder="Escriu el teu nom">
+          </p>
+
+          <p class="form">
+            <label for="email" class="colocar_email">Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio"
+              placeholder="Escriu el teu Email">
+          </p>
+
+          <p class="form">
+            <label for="telefone" class="colocar_telefono">Telèfon
+            </label>
+            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escriu el teu telèfon">
+          </p>
+
+          <p class="form">
+            <label for="website" class="colocar_website">Lloc web
+            </label>
+            <input type="url" name="introducir_website" id="website" placeholder="Escriu l'URL de la teva web">
+          </p>
+
+          <p class="form">
+            <label for="asunto" class="colocar_asunto">Assumpte
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+              placeholder="Escriu un assumpte">
+          </p>
+
+          <p class="form">
+            <label for="mensaje" class="colocar_mensaje">Misstage
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+              placeholder="Deixa aquí el teu comentari..."></textarea>
+          </p>
+
+          <button type="submit" name="enviar_formulario" id="enviar">
+            Enviar
+          </button>
+
+          <center>
+            <p class="aviso">
+              <span class="obligatorio"> * </span>Els camps són obligatoris.
+            </p>
+          </center>
+
+        </form>
+      </div>
+    </div>
+  </center>
+  <br>
+
+  <!--Enllaç cap a la pàgina de polítiques de l'empresa-->
+  <center><a href="LOPD.html" class="LOPD"> ⚖️ Polítiques de l'empresa ⚖️ </a></center>
+
+  <!--LLista de selecció de la zona inferior-->
+  <!-- SEMÀNTICA: "Footer": Peu de pàgina -->
+  <footer class="div9">
+    <nav class="nav">
+
+      <ul class="llista">
+        <li>
+          <a href="Cont.html">Contacte </a>
+        </li>
+        <li>
+          <a href="Proc.html">Procesadors</a>
+        </li>
+        <li>
+          <a href="Memo.html">Memoria RAM</a>
+        </li>
+        <li>
+          <a href="index.html">Inici</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
