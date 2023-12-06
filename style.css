@@ -80,10 +80,10 @@ h3 {
 
 }
 
-.div9{
+.div9 {
 
-padding-top:50px;
-  
+  padding-top: 50px;
+
 }
 
 .paraf {
@@ -284,3 +284,56 @@ span {
   color: white;
 
 }
+
+.paraf_LOPD {
+  text-align: justify;
+  text-align-last: left;
+  padding-left: 30px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin-right: 20px;
+}
+
+.LOPD {
+
+  color: orange;
+  text-align: center;
+  font-family: 'Monoton', sans-serif;
+  font-style: italic;
+  padding-top: 70px;
+  font-size: 23px;
+
+}
+
+.paraf_inici {
+
+  text-align: justify;
+  text-align-last: left;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.div3_inici {
+
+  float: left;
+  padding-left: 30px;
+  padding-right: 200px;
+
+}
+
+.div4_inici{
+
+  padding-top: 1px;
+  
+}
+
+.h3_inici {
+
+  margin-right: 200px;
+
+}
+
+
+
+
